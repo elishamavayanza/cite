@@ -1,7 +1,5 @@
 # CITE 
 
-Un explorateur de fichiers intuitif et puissant, permettant de naviguer, visualiser et gérer les fichiers et dossiers sur votre appareil ou  vos périphériques connectés.
-
 ## Fonctionnalités
 
 - Presentation
