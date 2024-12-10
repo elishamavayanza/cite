@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr_FR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="styleSheet" href="hotel.css">
+    <title>Exercice</title>
+    <meta name="description" content="Presentation hotele">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="table">
+            <div>
+                <p class="m">Informatique Programmation</p>
+            </div>
+            <div>
+                <span class="menu-burger" onclick="toggleMenu()"> <!-- Menu burger -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                <ul >
+                    <li class="menu_hom">
+                        <a href="home.html">HOME</a>
+                    </li>
+                    <li class="menu_us">
+                        <a href="us.html"  class="active">ABOUT US</a>
+                    </li>
+                    <li class="menu_serv">
+                        <a href="service.html" >SERVICE</a>
+                    </li>
+                    <li class="menu_book">
+                        <a href="book.html">BOOKING</a>
+                    </li>
+                    <li class="menu_gall">
+                        <a href="gallery.html" >GALLERY</a>
+                    </li>
+                    <li class="menu_contact">
+                        <a href="conatact.html" >CONTACTS</a>
+                    </li>
+
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <article>
+        <section class="presentation">
+            <div class="right">
+                <img src="ct1.jpg" alt="salle de travail">
+                <p class="time">24 Heures</p> <!-- Texte dans l'image -->
+
+            </div>
+            <div class="left">
+                <img src="ct2.jpg" alt="salle de travail1">
+                <img src="ct3.jpg" alt="salle de travail2">
+                <img src="ct1.jpg" alt="salle de travail3">
+                <img src="ct4.jpg" alt="salle de travail4">       
+                <img src="ct5.jpg" alt="salle de travail5">
+                <img src="ct.jpg" alt="salle de travail6">
+
+            </div>
+            
+        </section>
+        <section class="service">
+            <div class="centre">
+                <div class="image-item">
+                    <h2 class="txt">Welcome</h2>
+                    <img src="ct2.jpg" alt="salle de travail1">
+                    <p class="bs">Afin de préserver les données et les traitements, le schéma conceptuel ne doit mémoire.</p>
+                    <a href="#" class="btn-next">Suivant</a>
+                </div>
+                <div class="image-item">
+                    <h2 class="txt">Our Services</h2>
+                    <img src="ct1.jpg" alt="salle de travail2">
+                    <ul class="bs">
+                        <li>L’exemple 1-13 décrit la notation UML qui représente l’association un-à-un.</li>
+                        <li>Associations plusieurs-à-plusieurs sans attribut</li>
+                        <li>Dans l’exemple 1-20, chaque étudiant émet un ou plusieurs vœux concernant des stages.</li>
+                        <li>a cardinalité maximale N sur chaque lien dans le modèle entité-association</li>
+                    </ul>
+                    <a href="#" class="btn-next">Suivant</a>
+                </div>
+                <div class="image-item">
+                    <h2 class="txt">Our Restaurant</h2>
+                    <img src="ct4.jpg" alt="salle de travail3">
+                    <p class="bs">Par ailleurs, ce diagramme ne laisse apparaître aucune autre contrainte.</p>
+                    <a href="#" class="btn-next">Suivant</a>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        
+
+    </article>
+    <footer>
+        <p>Copyright 2024 Elishama Vayanza - Toute reproduction interdite</p>
+
+    </footer>
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector('.navbar ul');
+            menu.classList.toggle('active'); /* Ajoute ou enlève la classe 'active' */
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const currentPath = window.location.pathname.split('/').pop(); // Obtenir le nom du fichier actuel
+            const menuLinks = document.querySelectorAll(".navbar a");
+    
+            menuLinks.forEach(link => {
+                if (link.getAttribute("href") === currentPath) {
+                    link.classList.add("active");
+                }
+            });
+        });
+    </script>
+ 
+    
+
+
+    
+</body>
+</html>
