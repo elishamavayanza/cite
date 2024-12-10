@@ -13,7 +13,7 @@ Un explorateur de fichiers intuitif et puissant, permettant de naviguer, visuali
 
 ## Installation
 
-1. Clonez le dépôt : git@github.com:elishamavayanza/file-manager.git
+1. Clonez le dépôt : git@github.com:elishamavayanza/cite.git
 
 ## Captures d'ecran
 ![principal](./image/correction.JPG)
