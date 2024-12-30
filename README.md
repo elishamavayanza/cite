@@ -1,4 +1,4 @@
-# CITE 
+# Presentation d'un cite
 
 ## Fonctionnalités
 
